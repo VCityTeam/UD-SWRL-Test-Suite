@@ -17,4 +17,5 @@ RUN git init && \
 RUN git remote add -f origin https://github.com/VCityTeam/UD-Graph.git && \
     git pull origin master
 
-CMD [ "sh" ]
+ENTRYPOINT [ "python", "/UD-SWRL-Test-Suite/rules/swrl_rules.py" ]
+# CMD [ "sh" ]
